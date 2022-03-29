@@ -1,0 +1,48 @@
+main{
+    flex-grow: 1;
+    display: flex;
+    font-family: 'Mulish', sans-serif;
+}
+.content-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+}
+.content-container h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 8rem;
+    line-height: 5rem;
+}
+.content-container  h1 span{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+.movie-title{
+    color: var(--accent-color);
+    font-size: 3rem;
+}
+.movie-text{
+    width: 600px;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.button{
+    height: 80px;
+    width: 300px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+}
+.social-container{
+    background-color: blue;
+    width: 48px;
+}
