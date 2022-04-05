@@ -16,6 +16,7 @@ main{
     flex-direction: column;
     font-size: 8rem;
     line-height: 5rem;
+    font-weight: 400;
 }
 .content-container  h1 span{
     font-size: 2.5rem;
@@ -24,6 +25,8 @@ main{
 .movie-title{
     color: var(--accent-color);
     font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
 }
 .movie-text{
     width: 600px;
@@ -42,7 +45,29 @@ main{
     font-weight: 200;
     font-style: italic;
 }
-.social-container{
-    background-color: blue;
+.social-container ul{
+    height: 100%;
     width: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.social-container a{
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .5s;
+}
+.social-container a:hover{
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.social-container i{
+    font-size: 1.5rem;
 }

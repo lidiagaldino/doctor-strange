@@ -12,7 +12,3 @@ body{
     flex-direction: column;
     padding: 0 128px;
 }
-footer{
-    background-color: var(--accent-color);
-    height: 80px;
-}
