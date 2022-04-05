@@ -12,3 +12,12 @@ body{
     flex-direction: column;
     padding: 0 128px;
 }
+@media (max-width: 768px){
+    body{
+        padding: 0 30px;
+        background-color: #0009;
+        background-image: url(../imgs/background.png);
+        background-blend-mode: darken;
+        background-position: 90%;
+    }
+}

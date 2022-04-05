@@ -1,0 +1,15 @@
+body{
+    height: 100vh;
+    background-color: black;
+    padding: 0 128px;
+}
+main{
+    display: flex;
+    flex-grow: 1;
+    background-color: aqua;
+}
+.strange{
+    padding-top: 25px;
+    width: 500px;
+    height: 646px;
+}
