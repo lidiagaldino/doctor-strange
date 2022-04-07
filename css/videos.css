@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    background-color: black;
+    padding: 0 128px;
+}
+.links-cont a {
+    text-shadow: 2px 2px 2px #000;
+    padding: 8px 5px;
+    transition: all .5s;
+}
+.links-cont a:hover{
+    color: #FF031A;
+}
+main{
+    display: flex;
+    flex-grow: 1;
+}
