@@ -26,6 +26,23 @@ header{
         height: 70px;
     }
     .links-cont{
-        display: none;
+        background-color: #000;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.25rem;
+        font-weight: 300;
+        gap: 60px;
+        transform: translate(100%);
+        transition: all 1s;
+    }
+
+    .menu-burger-container.show ~ .links-cont{
+        transform: translate(0);
     }
 }
