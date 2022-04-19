@@ -1,7 +1,12 @@
+body, html{
+    position: relative;
+    overflow-x: hidden;
+}
 body{
     height: 100vh;
     background-color: black;
     padding: 0 128px;
+    animation: zoom 1.5s;
 }
 .links-cont a {
     text-shadow: 2px 2px 2px #000;
@@ -11,6 +16,11 @@ body{
 .links-cont a:hover{
     color: #FF031A;
 }
+h1{
+    padding: 31px;
+    color: white;
+    font-family: 'Risque';
+}
 main{
     display: flex;
     flex-grow: 1;
@@ -18,8 +28,38 @@ main{
     align-items: center;
     gap: 31px;
 }
-h1{
-    padding: 31px;
-    color: white;
-    font-family: 'Risque';
+.gallery-desktop{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.gallery-mobile{
+    display: none;
+}
+footer{
+    height: 80px;
+}
+@media (max-width: 768px){
+    body{
+        padding: 0 30px;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    .gallery-desktop{
+        display: none;
+    }
+    .gallery-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+@keyframes zoom {
+    0%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

@@ -1,7 +1,12 @@
+body, html{
+    position: relative;
+    overflow-x: hidden;
+}
 body{
     height: 100vh;
     background-color: black;
     padding: 0 128px;
+    animation: zoom 1.5s;
 }
 .links-cont a {
     text-shadow: 2px 2px 2px #000;
@@ -35,4 +40,26 @@ h1{
     display: flex;
     padding: 134px;
     gap: 55px;
+}
+@media (max-width: 768px){
+    .estranho{
+        font-size: 3rem;
+    }
+    .doctor{
+        font-size: 2rem;
+    }
+    body{
+        padding: 0 30px;
+    }
+    .videos-container{
+        flex-direction: column;
+    }
+}
+@keyframes zoom {
+    0%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

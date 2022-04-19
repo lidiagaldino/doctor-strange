@@ -19,6 +19,7 @@ body{
 }
 main{
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
 }
 .strange{
@@ -33,14 +34,28 @@ main{
     width: 100%;
     height: 100%;
 }
-.container{
+.strange-container{
     padding-top: 25px;
     display: flex;
     gap: 62px;
     height: 100vh;
     width: 100vw;
 }
-h1{
+.america-container{
+    display: flex;
+    gap: 62px;
+}
+.wanda-container{
+    padding-top: 270px;
+    display: flex;
+    gap: 62px;
+}
+.wong-container{
+    padding-top: 270px;
+    display: flex;
+    gap: 62px;
+}
+h2{
     display: flex;
     flex-direction: column;
     font-family: 'Mulish', sans-serif;
@@ -61,16 +76,20 @@ h1{
     font-family: 'Mulish', sans-serif;
     color: white;
 }
-.barra{
-    width: 645px;
-    height: 11px;
+footer{
+    height: 80px;
 }
 @media (max-width: 768px){
     body{
         padding: 0 30px;
     }
-    .strange, .barra, .text, .desc{
+    .strange-container, .wanda-container, .wong-container, .america-container{
         display: none;
+    }
+    main{
+        padding-top: 50px;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     .personagens{
         display: flex;
