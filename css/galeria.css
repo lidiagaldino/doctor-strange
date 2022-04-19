@@ -44,7 +44,7 @@ footer{
         padding: 0 30px;
     }
     h1{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .gallery-desktop{
         display: none;
@@ -53,6 +53,11 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 100px;
+    }
+}
+@media (max-width: 356px){
+    h1{
+        font-size: 0.8rem;
     }
 }
 @keyframes zoom {
